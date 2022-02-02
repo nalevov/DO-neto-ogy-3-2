@@ -47,12 +47,19 @@
     Чтобы изменить поведение нужно запускать с команду SSH с параметром -t , который переназначает терминал.
 
 13. Sudo apt-get install reptyr 								- устанавливаем reptyr 
+	
  wget https://cdimage.ubuntu.com/ubuntu-server/daily-live/current/jammy-live-server-amd64.iso & - запускаем процесс в background
+	
  jobs -l 											- узнаем PID процесса 
+	
  screen 											- запускаем новое окно
+	
  ps -a												- проверяем процесс
- reptyr PID											- мигрируем процесс  
+	
+ reptyr PID											- мигрируем процесс 
+	
  CTRL+A+D											- выходим из screen
+	
 
  отключаемся от ВМ, затем заново подключаемся по SSH
  
